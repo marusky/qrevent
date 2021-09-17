@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2021-09-17
+  time: 2021-09-17 16:36:43
+  user_id: 
+
+two:
+  name: MyString
+  date: 2021-09-17
+  time: 2021-09-17 16:36:43
+  user_id: 
