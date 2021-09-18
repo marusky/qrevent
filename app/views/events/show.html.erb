@@ -6,6 +6,13 @@
 </p>
 
 <p>
+  <strong>Attendees:</strong> <br/>
+  <% @event.attendees.each do |attendee| %>
+    <%= attendee.name %> | <%= attendee.email %> | <%= attendee.phone_number %> <br/>
+  <% end %>
+</p>
+
+<p>
   <strong>Date:</strong>
   <%= @event.date %>
 </p>
@@ -20,5 +27,6 @@
   <%= @event.user_id %>
 </p>
 
+<%= link_to 'New Attendee', new_attendee_path(event_id: @event.id) %>
 <%= link_to 'Edit', edit_event_path(@event) %> |
 <%= link_to 'Back', events_path %>
